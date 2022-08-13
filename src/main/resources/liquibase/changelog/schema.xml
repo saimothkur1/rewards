@@ -1,0 +1,35 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="rewards-1.0" author="Sai">
+        <preConditions>
+            <not>
+                <tableExists tableName="REWARDS"/>
+            </not>
+        </preConditions>
+
+
+        <createTable tableName="REWARDS">
+            <column name="CUSTOMER_ID" type="varchar(256)" >
+                <constraints nullable="false" primaryKey="true" primaryKeyName="REWARDS_PK"></constraints>
+            </column>
+            <column name="TRANSACTION_ID" type="varchar(64)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="REWARDS_PK"></constraints>
+            </column>
+            <column name="TRANSACTION_DATE" type="date"></column>
+            <column name="AMOUNT" type="DECIMAL(16,2)"></column>
+            <column name="POINTS" type="INT" defaultValue="0"></column>
+
+        </createTable>
+
+<!--        <addPrimaryKey tableName="REWARDS"-->
+<!--                       columnNames="CUSTOMER_ID, TRANSACTION_ID"-->
+<!--                       constraintName="REWARDS_PK"-->
+<!--                       validate="true"/>-->
+
+    </changeSet>
+
+</databaseChangeLog>

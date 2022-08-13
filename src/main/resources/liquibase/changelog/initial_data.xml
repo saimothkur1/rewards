@@ -1,0 +1,44 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="rewards-1.0" author="Sai">
+
+        <insert tableName="REWARDS">
+            <column name="CUSTOMER_ID" value="C100"/>
+            <column name="TRANSACTION_ID" value="T001"/>
+            <column name="TRANSACTION_DATE" value="2022-08-12"/>
+            <column name="AMOUNT" value="120"/>
+            <column name="POINTS" value="90"/>
+        </insert>
+
+        <insert tableName="REWARDS">
+            <column name="CUSTOMER_ID" value="C100"/>
+            <column name="TRANSACTION_ID" value="T002"/>
+            <column name="TRANSACTION_DATE" value="2022-07-12"/>
+            <column name="AMOUNT" value="120"/>
+            <column name="POINTS" value="90"/>
+        </insert>
+
+        <insert tableName="REWARDS">
+            <column name="CUSTOMER_ID" value="C100"/>
+            <column name="TRANSACTION_ID" value="T003"/>
+            <column name="TRANSACTION_DATE" value="2022-06-12"/>
+            <column name="AMOUNT" value="100"/>
+            <column name="POINTS" value="50"/>
+        </insert>
+
+        <insert tableName="REWARDS">
+            <column name="CUSTOMER_ID" value="C100"/>
+            <column name="TRANSACTION_ID" value="T004"/>
+            <column name="TRANSACTION_DATE" value="2022-06-12"/>
+            <column name="AMOUNT" value="80"/>
+            <column name="POINTS" value="30"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
+
