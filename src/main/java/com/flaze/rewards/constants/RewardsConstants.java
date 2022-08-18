@@ -23,6 +23,6 @@ public class RewardsConstants {
     public static final String DB_ERROR_INSERT_MESSAGE = "Db Exception Occurred when trying to persist customer transaction details";
 
     public static final String TRANSACTION_NOT_FOUND_ERROR_MESSAGE = "Database Error";
-    public static final String TRANSACTION_NOT_FOUND_ERROR_DETAIL = "Transactions doesn't exist for CustomerId: ";
+    public static final String TRANSACTION_NOT_FOUND_ERROR_DETAIL = "Transactions doesn't exist for the combination ";
 
 }
